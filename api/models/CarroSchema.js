@@ -4,20 +4,20 @@ mongoose.set('useCreateIndex', true);
 const carro = new mongoose.Schema({
     modelo: {
         type: String,
-        equired: [true, "O modelo do veículo é obrigatório"],
+        required: [true, "O modelo do veículo é obrigatório"],
     },
     placa: {
         type: String,
-        unique : true,
+        unique: true,
         required: [true, "A placa do veículo é obrigatória"],
     },
     ano: {
         type: Number,
         required: [true, "O ano do veículo é obrigatório"],
     },
-    criadoEm: { 
-        type: Date, 
-        default: Date.now 
+    criadoEm: {
+        type: Date,
+        default: Date.now
     },
 });
 

@@ -6,8 +6,4 @@ const carro = require('../controllers/CarroController');
 router.post('/carro/cadastrar', carro.cadastrar);
 router.get('/carro/listar', carro.listar);
 
-router.get('/carro/buscar/:placa', carro.buscar);
-router.put('/carro/alterar', carro.alterar);
-router.delete('/carro/remover/:placa', carro.deletar);
-
 module.exports = router;
